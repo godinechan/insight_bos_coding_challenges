@@ -19,9 +19,7 @@ Explanation: It's the substring "abc" four times. (And the substring "abcabc" tw
 
 def is_substring_helper (data):
 	#YOUR CODE GOES HERE
-    if len(data) %2 !=0 :
-        return False
-    elif len(data) %len(set(data)) != 0:
+    if len(data) %len(set(data)) != 0:
         return False
 
     else:
