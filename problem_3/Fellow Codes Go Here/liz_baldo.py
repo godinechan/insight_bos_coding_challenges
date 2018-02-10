@@ -17,9 +17,13 @@ Explanation: It's the substring "abc" four times. (And the substring "abcabc" tw
 """
 
 def is_substring_helper (data):
-	#YOUR CODE GOES HERE
+        string = data + data
+        string = string [1:-2]
 
-	return False
+        if string.find(data) == -1:
+                return False
+        else:
+                return True
 
 #DON NOT CHANGE THIS FUNCTION
 def is_substring (string_input):
